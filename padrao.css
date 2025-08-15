@@ -1,0 +1,136 @@
+:root {
+    /* Paleta principal */
+    --vinho-tinto: #730202;
+    --vermelho-forte: #bf0404;
+    --dourado: #ff970e;
+    --bege-claro: #F2cda0;
+    --verde-oliva: #8c8630;
+    --amarelo: #bfb304;
+    --cinza-escuro: #2E2E2E;
+    --branco-vinho: #FAF9F6;
+
+    /* Texto */
+    --texto-primario: #252525;
+    --texto-claro: #d6d6d6;
+
+    /* Fundo */
+    --fundo-claro: var(--branco-vinho);
+    --fundo-escuro: var(--vinho-tinto);
+
+    /* Botões */
+    --botao-principal: var(--dourado-suave);
+    --botao-hover: var(--verde-oliva);
+}
+
+
+body {
+    background-color: #f2c3d5;
+}
+
+#logo {
+    color: var(--cinza-escuro);
+    font-family: "playfair", sans-serif;
+    font-size: 40px;
+}
+
+ #logo::before {
+    content: "🍷 ";
+    font-size: 1.2em;
+}
+
+.navegacao {
+    width: 100%;
+    font-size: 24px;
+    word-spacing: 60px;
+}
+a {
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    color: var(--texto-primario);
+    text-decoration: none;
+
+}
+
+hr{
+    color: #252525;
+}
+
+h2{
+    font-family: "roboto";
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+.icones-nav {
+    width: 2rem;
+    padding: 1%;
+}
+
+#navSearch{
+    margin-left: 300px;
+}
+
+#footer-logo{
+    width: 200px;
+    margin-right: 250px;
+}
+
+
+
+#footer {
+   
+    /* Rosa claro */
+    background-color:  #ff007f4a;
+    /* vinho escuro */
+    color: black;
+    /* branco suave */
+    padding: 20px 10px;
+}
+
+footer table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+footer h4 {
+    margin-bottom: 8px;
+    color: var(--dourado-suave);
+    /* dourado elegante */
+    font-size: 16px;
+}
+
+.footer-logo h2 {
+    font-family: "Playfair", serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--dourado-suave);
+}
+
+.footer-copy p {
+    font-size: 12px;
+    margin-top: 20px;
+    color: black;
+}
+
+
+
+#coluna-2{
+    width: 30%;
+    text-align: left;
+}
+
+.logohover {
+    color:rgb(218, 5, 164);
+    transform: scale(1.05) skew(-3deg, 0deg) translateX(5px);
+    transition: transform 0.6s ease;
+    transform-origin: left;
+    width: 90%
+}
+@import url('./efeitos.css');

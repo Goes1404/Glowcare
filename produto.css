@@ -1,0 +1,189 @@
+/* === Reset Básico === */
+figure,
+article {
+  border: 1px solid #ff007f;
+    margin: 0;
+    padding: 0;
+}
+
+/* === Variáveis Globais (Boa prática) === */
+:root {
+    --cor-primaria: #bf0404;
+    --cor-fundo-card: #ff007f4a; /* Rosa claro */
+    --cor-texto-principal: #2E2E2E;
+    
+    --cor-destaque:#ff007f ;
+    --cor-fundo-slider: #ffb6c1;
+    --sombra-card: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Grade de Produtos (Layout com Flexbox) === */
+.grade-produtos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza os cards no container */
+    padding: 20px;
+}
+
+/* === Card de Produto === */
+.card-produto {
+    background-color: var(--cor-fundo-card);
+    border-radius: 12px;
+    box-shadow: var(--sombra-card);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    width: 100%; /* Ocupa 100% do container do flex item */
+    max-width: 300px; /* Largura máxima para cada card */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.card-produto__imagem-container {
+    height: 180px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.card-produto__imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+.card-produto__info {
+    padding: 0 15px 15px;
+    flex-grow: 1; /* Faz esta área crescer para ocupar o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-produto__titulo {
+    font-weight: 500;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+    color: var(--cor-texto-principal);
+}
+
+.card-produto__descricao {
+    color: var(--cor-texto-secundario);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card-produto__preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-destaque);
+}
+
+
+/* === Componente Produto Zoom === */
+.produto-zoom {
+    background-color: var(--cor-destaque);
+    width: 80%;
+    max-width: 600px;
+    height: 500px;
+    margin: 20px auto; /* Centraliza o componente */
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.produto-zoom__imagem-container {
+    overflow: hidden;
+    width: 90%;
+    background-color: var(--cor-fundo-slider);
+    margin: 25px auto;
+    height: 350px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.produto-zoom__porcentagem {
+    font-size: 60px;
+    color: var(--cor-texto-principal);
+    display: inline-block;
+    margin: 10px 0;
+}
+
+/* === Slider Personalizado === */
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%; /* Largura relativa */
+    height: 8px;
+    background: var(--cor-fundo-slider);
+    border-radius: 5px;
+    outline: none;
+}
+
+.slider:focus {
+    box-shadow: 0 0 0 3px var(--cor-primaria);
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--cor-primaria);
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+/* === Seção de Personalização === */
+.personalizacao-container {
+    text-align: left;
+    margin-left: 50px;
+    line-height: 50px;
+}
+
+.personalizacao-container__titulo {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* === Ícones e Utilitários === */
+.icone-destaque {
+    width: 40px;
+    vertical-align: middle;
+}
+
+.icon-seta {
+    display: inline-block;
+    width: 50px;
+    vertical-align: middle;
+}
+
+/* === Responsividade === */
+/* Para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    .grade-produtos {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    /* Em telas menores, os cards podem ocupar mais espaço */
+    .card-produto {
+        max-width: 48%; /* Dois cards por linha */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Em telas muito pequenas, um card por linha */
+    .card-produto {
+        max-width: 90%;
+    }
+}
+@import url('./efeitos.css');

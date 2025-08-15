@@ -1,0 +1,107 @@
+.body {
+  font-family: 'Georgia', serif;
+  background-color: #f2c3d5f2; /* Rosa bebê bem suave */
+  color: #333; /* Adicionei uma cor para o texto para garantir a leitura */
+}
+
+.main {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.banner {
+  display: flex;
+  background-color: #ff007f4a;
+  padding: 30px;
+  border: 1px solid #ff007f;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+  
+  border-right: 1px solid #ff007f4a;
+  padding-right: 30px;
+}
+
+.logo img {
+  width: 235px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.logo h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.slogan {
+  flex: 1;
+}
+
+.slogan h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#logo::before {
+  content: "🍷 ";
+  font-size: 1.2em;
+}
+
+.slogan p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.slogan h2::after {
+  content: " 🍇";
+  color: #730202;
+  font-weight: normal;
+}
+
+.descricao {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 40px;
+  padding: 0 10px;
+  line-height: 1.8;
+}
+
+.produtos {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.produto {
+  border: 1px solid #ff007f;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  background-color: #ff007f4a;
+  width: 30%;
+}
+
+.produto img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.produto p {
+  font-size: 14px;
+}
+
+@import url('./efeitos.css');
