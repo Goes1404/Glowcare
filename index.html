@@ -6,101 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="skincare, maquiagem, beleza, cuidado pessoal">
     <meta name="description" content="Site da GlowCare, seus produtos e sua história">
-
-    <!-- Fontes externas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- CAMINHOS CORRIGIDOS: Todos começam com /Glowcare/ -->
-    <link rel="stylesheet" href="/Glowcare/src/css/padrao.css">
-    <link rel="stylesheet" href="/Glowcare/src/css/home.css">
-    <link rel="stylesheet" href="/Glowcare/src/css/efeitos.css">
+    <!-- CAMINHOS SIMPLIFICADOS: Apontam para as pastas na raiz do projeto -->
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/efeitos.css">
 
     <title>GlowCare - Início</title>
 </head>
 
 <body>
-
-    <!-- Cabeçalho do site -->
     <header>
-    <h1 id="logo" class="img-evento">GlowCare</h1>
-    
+        <h1 id="logo" class="img-evento">GlowCare</h1>
+        <hr>
+        <nav class="navegacao">
+            <!-- CAMINHOS SIMPLIFICADOS -->
+            <a href="index.html">Início</a>
+            <a href="historia.html" class="img-evento">Sobre</a>
+            <a href="produtos.html"class="img-evento">Produtos</a>
+            <a href="contato.html" class="img-evento">Contato</a>
+            <a href="galeria.html" class="'img-evento">Galeria</a>
+
+            <a href="#" id="navSearch"><img src="assets/imgs/NavSearch.png" alt="Ícone de busca" class="icones-nav"></a>
+            <a href="#" id="navBag"><img src="assets/imgs/NavBag.png" alt="Ícone de sacola de compras" class="icones-nav"></a>
+        </nav>
+    </header>
     <hr>
-
-    <nav class="navegacao">
-        <!-- CAMINHOS CORRIGIDOS -->
-        <a href="/Glowcare/index.html">Início</a>
-        <a href="/Glowcare/src/pages/historia.html" class="img-evento">Sobre</a>
-        <a href="/Glowcare/src/pages/produtos.html"class="img-evento">Produtos</a>
-        <a href="/Glowcare/src/pages/contato.html" class="img-evento">Contato</a>
-        <a href="/Glowcare/src/pages/galeria.html" class="'img-evento">Galeria</a>
-
-        <a href="#" id="navSearch"><img src="/Glowcare/src/assets/imgs/NavSearch.png" alt="Ícone de busca" class="icones-nav"></a>
-        <a href="#" id="navBag"><img src="/Glowcare/src/assets/imgs/NavBag.png" alt="Ícone de sacola de compras" class="icones-nav"></a>
-
-    </nav>
-</header>
-<hr>
-    
     
     <main>
         <div class="container">
-            <!-- Banner -->
             <section class="banner">
               <div class="logo">
-                <!-- CAMINHO CORRIGIDO -->
-                <img src="/Glowcare/src/assets/imgs/mulhermake.jpg"  alt="Mulher com maquiagem radiante, representando a beleza GlowCare" class="img-evento" width="530px" height="350px">
-
+                <img src="assets/imgs/mulhermake.jpg"  alt="Mulher com maquiagem radiante" class="img-evento" width="530px" height="350px">
               </div>
               <div class="slogan">
                 <h2>Mais que maquiagem: a sua melhor versão.</h2>
                 <p>
-                  Na GlowCare, acreditamos que a maquiagem vai muito além da estética: é uma poderosa forma de autocuidado e uma celebração da sua identidade. Vemos cada produto como um pincel para a sua criatividade, uma ferramenta para você pintar sua história e expressar seu humor no dia a dia. Oferecemos um leque de cores vibrantes e texturas luxuosas, formuladas com ingredientes que respeitam e nutrem a sua pele, porque a beleza verdadeira floresce com saúde. Nossa missão é criar com paixão produtos que não apenas realçam, mas que iluminam sua essência de dentro para fora. Queremos que você celebre cada detalhe da sua beleza única e se sinta absolutamente poderosa e radiante em todas as ocasiões.
+                  Na GlowCare, acreditamos que a maquiagem vai muito além da estética...
                 </p>
               </div>
             </section>
-        
-            <!-- Descrição (sem links para corrigir) -->
-            <section class="descricao">
-              <p>
-                Descubra o brilho da sua beleza com a GlowCare...
-              </p>
-            </section>
-        
-            <!-- Produtos -->
+            
             <section class="produtos">
               <div class="produto">
-                <!-- CAMINHOS CORRIGIDOS -->
-                <img src="/Glowcare/src/assets/imgs/esmalte.png" class="img-evento" alt="Frasco de esmalte rosa GlowCare">
+                <img src="assets/imgs/esmalte.png" class="img-evento" alt="Frasco de esmalte rosa GlowCare">
               </div>
               <div class="produto">
-                <img src="/Glowcare/src/assets/imgs/base.png" class="img-evento" alt="Base">
+                <img src="assets/imgs/base.png" class="img-evento" alt="Base">
               </div>
               <div class="produto">
-                <img src="/Glowcare/src/assets/imgs/creme.png" class="img-evento" alt="Embalagem de creme hidratante GlowCare">
+                <img src="assets/imgs/creme.png" class="img-evento" alt="Embalagem de creme hidratante GlowCare">
               </div>
             </section>
           </div>
     </main>
 
-
-    <!-- Rodapé do site -->
     <footer id="footer">
         <table>
             <tr>
                 <td id="coluna-1">
-                    <!-- CAMINHOS CORRIGIDOS -->
-                    <img src="/Glowcare/src/assets/imgs/logoglow.png" alt="Logo GlowCare" id="footer-logo">
+                    <img src="assets/imgs/logoglow.png" alt="Logo GlowCare" id="footer-logo">
                 </td>
                 <td id="coluna-2">
-                    <img src="/Glowcare/src/assets/imgs/IconEmail.png" alt="Ícone de e-mail">
+                    <img src="assets/imgs/IconEmail.png" alt="Ícone de e-mail">
                     contato@glowcare.com
                     <br>
-                    <img src="/Glowcare/src/assets/imgs/IconLoc.png" alt="Ícone de localização">
+                    <img src="assets/imgs/IconLoc.png" alt="Ícone de localização">
                     Escritório em São Paulo - SP
                     <br>
-                    <img src="/Glowcare/src/assets/imgs/IconWpp.png" alt="Ícone de contato">
+                    <img src="assets/imgs/IconWpp.png" alt="Ícone de contato">
                     @GlowCare
                 </td>
             </tr>
@@ -112,5 +89,4 @@
         </table>
     </footer>
 </body>
-
 </html>
