@@ -4,125 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="contato, skincare, maquiagem, beleza, suporte">
-    <meta name="description" content="Entre em contato com a GlowCare. Estamos aqui para ajudar com suas dúvidas, sugestões e parcerias.">
-
-    <!-- Fontes externas -->
+    <meta name="keywords" content="skincare, maquiagem, beleza, eventos, inspiração">
+    <meta name="description" content="Galeria de fotos da GlowCare: eventos, inspirações e nossos produtos em ação.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <!-- CAMINHOS SIMPLIFICADOS -->
-    <link rel="stylesheet" href="css/padrao.css">
-    <link rel="stylesheet" href="css/contato.css">
-    <link rel="stylesheet" href="css/efeitos.css">
-    <link rel="stylesheet" href="css/home.css">
-
-    <title>Contato e Políticas - GlowCare</title>
+    <link rel="stylesheet" href="padrao.css">
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="efeitos.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Galeria - GlowCare</title>
 </head>
 
 <body>
-
-    <!-- Cabeçalho do site -->
     <header>
         <h1 id="logo">GlowCare</h1>
         <hr>
-
         <nav class="navegacao">
-            <!-- CAMINHOS SIMPLIFICADOS -->
             <a href="index.html">Início</a>
             <a href="historia.html">Sobre</a>
             <a href="produtos.html">Produtos</a>
             <a href="contato.html">Contato</a>
             <a href="galeria.html">Galeria</a>
-
-            <a href="#" id="navSearch"><img src="assets/imgs/NavSearch.png" alt="Ícone de busca" class="icones-nav"></a>
-            <a href="#" id="navBag"><img src="assets/imgs/NavBag.png" alt="Ícone de sacola de compras" class="icones-nav"></a>
-
+            <a href="#" id="navSearch"><img src="imgs/NavSearch.png" alt="Ícone de busca" class="icones-nav"></a>
+            <a href="#" id="navBag"><img src="imgs/NavBag.png" alt="Ícone de sacola de compras" class="icones-nav"></a>
         </nav>
     </header>
     <hr>
 
     <main>
-        <h2>Fale Conosco!</h2>
-        <table class="table-estrutura">
+        <h2>Nossos Momentos</h2>
+        <table>
             <tr>
                 <td>
-                    <section class="coluna1-form">
-                        <form>
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome">
-                            <br><br>
-                            <label for="sobrenome">Sobrenome</label>
-                            <input type="text" id="sobrenome" name="sobrenome">
-                            <br><br>
-
-                            <label for="email">Email</label><br>
-                            <input type="email" id="email" name="email"><br><br>
-
-                            <label for="mensagem">Sua mensagem</label><br>
-                            <textarea id="mensagem" name="mensagem" rows="6"></textarea><br><br>
-
-                            <button type="submit" class="botao-efeito">Enviar</button>
-                        </form>
+                    <section class="caixa-imagens">
+                        <figure class="imagem-com-data">
+                            <div class="data-evento">10/02/2024</div>
+                            <img src="imgs/eventog5.jpeg" alt="Evento de Lançamento da Linha Rose Gold" class="img-evento">
+                        </figure>
                     </section>
                 </td>
                 <td>
-                    <article class="caixa-download">
-                        <header class="cabeçalho-caixa-download">
-                            <h3 style="margin: 0;">Termos de Uso</h3>
-                        </header>
-                        <section class="caixa-link-download">
-                            <a href="docs/termos.pdf" class="link-download" download>
-                                <img src="assets/imgs/IconLoad.png" alt="Ícone de download" width="40">
-                            </a>
-                        </section>
-                    </article>
-                    <br>
-                    <article class="caixa-download">
-                        <header class="cabeçalho-caixa-download">
-                            <h3 style="margin: 0;">Política de Privacidade</h3>
-                        </header>
-                        <section class="caixa-link-download">
-                            <a href="docs/politica.pdf" class="link-download" download>
-                                <img src="assets/imgs/IconLoad.png" alt="Ícone de download" width="40">
-                            </a>
-                        </section>
-                    </article>
+                    <section class="caixa-imagens">
+                        <figure class="imagem-com-data">
+                            <div class="data-evento">15/03/2024</div>
+                            <img src="imgs/eventos1.png" alt="Workshop de Skincare com Especialistas" class="img-evento">
+                        </figure>
+                    </section>
+                </td>
+                <td>
+                    <section class="caixa-imagens">
+                        <figure class="imagem-com-data">
+                            <div class="data-evento">22/04/2024</div>
+                            <img src="imgs/eventos2.png" alt="Celebração do Dia da Beleza GlowCare" class="img-evento">
+                        </figure>
+                    </section>
                 </td>
             </tr>
         </table>
 
-        <section class="politica">
-            <h2>Nossa Política de Privacidade</h2>
-            <p>Levamos sua privacidade a sério. Veja como tratamos seus dados:</p>
-            <ul class="lista">
-                <li>Não compartilhamos seus dados com terceiros sem seu consentimento.</li>
-                <li>Seus dados de login são criptografados e protegidos.</li>
-                <li>Cookies são usados apenas para melhorar sua experiência em nosso site.</li>
-                <li>Você pode solicitar a exclusão dos seus dados a qualquer momento.</li>
-                <li>Usamos as informações fornecidas apenas para contato e melhorias em nossos serviços.</li>
-            </ul>
-        </section>
-        
-        <br>
+        <h2>Inspirações</h2>
+        <table>
+            <tr>
+                <td>
+                    <section class="caixa-imagens">
+                        <figure class="imagem-com-data">
+                            <div class="data-evento">Look Natural</div>
+                            <img src="imgs/lojag1.jpeg" alt="Modelo com maquiagem leve e natural" class="img-evento">
+                        </figure>
+                    </section>
+                </td>
+                <td>
+                    <section class="caixa-imagens">
+                        <figure class="imagem-com-data">
+                            <div class="data-evento">Brilho de Verão</div>
+                            <img src="imgs/lojag2.jpeg" alt="Maquiagem com tons quentes e iluminados" class="img-evento">
+                        </figure>
+                    </section>
+                </td>
+                <td>
+                    <section class="caixa-imagens">
+                        <figure class="imagem-com-data">
+                            <div class="data-evento">Glamour Noturno</div>
+                            <img src="imgs/lojag3.jpeg" alt="Maquiagem sofisticada para a noite" class="img-evento">
+                        </figure>
+                    </section>
+                </td>
+            </tr>
+        </table>
     </main>
-
-    <!-- Rodapé do site -->
+    <br>
     <footer id="footer">
         <table>
             <tr>
                 <td id="coluna-1">
-                    <img src="assets/imgs/logoglow.png" alt="Logo GlowCare" id="footer-logo">
+                    <img src="imgs/logoglow.png" alt="Logo GlowCare" id="footer-logo">
                 </td>
                 <td id="coluna-2">
-                    <img src="assets/imgs/IconEmail.png" alt="Ícone de e-mail">
+                    <img src="imgs/IconEmail.png" alt="Ícone de e-mail">
                     contato@glowcare.com
                     <br>
-                    <img src="assets/imgs/IconLoc.png" alt="Ícone de localização">
+                    <img src="imgs/IconLoc.png" alt="Ícone de localização">
                     Escritório em São Paulo - SP
                     <br>
-                    <img src="assets/imgs/IconWpp.png" alt="Ícone de contato">
+                    <img src="imgs/IconWpp.png" alt="Ícone de contato">
                     @GlowCare
                 </td>
             </tr>
@@ -134,5 +120,4 @@
         </table>
     </footer>
 </body>
-
 </html>
